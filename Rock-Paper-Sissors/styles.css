@@ -1,0 +1,22 @@
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "rock"
+        "paper"
+        "sissor"
+        "score"
+        ".";
+}
+
+
+.rock_button {
+    background-color: rgb(12, 12, 12);
+
+}
+
+.sissor_button {
+    grid: 2/1;
+    grid-area: sissor;
+    background-color: silver;
+}
