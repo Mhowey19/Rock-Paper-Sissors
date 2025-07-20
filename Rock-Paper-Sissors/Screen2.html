@@ -4,44 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Sissors</title>
+    <title>Document</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <header>
-    <nav> <!--Nav Bar-->
+    <nav>
         <a href="/Rock-Paper-Sissors/homescreen.html">Home Screen</a>
         <a href="/Rock-Paper-Sissors/index.html"> Screen 1 </a>
         <a href="/Rock-Paper-Sissors/Screen2.html">Screen 2</a>
     </nav>
-    <h1>Rock Paper Sissors Input</h1>
+    <h1>Rock Paper Sissors Image</h1>
 </header>
 
 <body>
     <main>
-        <div class="game-container"> <!--Main section of the game surrounded in a flex box-->
+        <div class="game-container">
             <form id="form">
-                <label></label>
-                <input id="user-input" class="user-input" type="text" /><!--Users input-->
-                <button id="submit-button" class="button-clear">Submit</button>
+                <button id="rock_button" value=1 class="rock_button"></button>
+                <button id="sissor_button" value=2 class="sissor_button"></button>
+                <button id="paper_button" value=3 class="paper_button"></button>
+                <div id="computerChoice" class="computer-choice"></div>
+                <button id="scoreReset" class="button-clear">Reset</button>
             </form>
-            <div id="computerChoice" class="computer-choice"></div> <!--Contatins the computers choice-->
-            <!--Gives For screen two gives the choices a value-->
-            <button id="rock_button" value=1 class="hidden-button"></button>
-            <button id="sissor_button" value=2 class="hidden-button"></button>
-            <button id="paper_button" value=3 class="hidden-button"></button>
-            <button id="scoreReset" class="button-clear">Reset</button>
-            <section><!--Score Board-->
+            <section>
                 <table class="score-board" id="scoreBoard">
                     <th class="win-counter">
-                        Win:
+                        Win
                     <td id="winValue" class="win-value">0</td>
                     </th>
                     <th class="tie-counter">
-                        Tie:
+                        Tie
                     <td id="tieValue" class="tie-value">0</td>
                     </th>
                     <th class="lose-counter">
-                        Lose:
+                        Lose
                     <td id="lossValue" class="loss-value">0</td>
                     </th>
                 </table>

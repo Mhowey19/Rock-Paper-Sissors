@@ -1,16 +1,64 @@
+html {
+    font-family: "Space Mono", monospace;
+    color: white;
+}
+
+body {
+    background-color: rgb(7, 151, 141);
+    border: 1px white dotted;
+    margin: 15px;
+}
+
 .game-container {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
     flex-direction: column;
-    margin: 10px;
+    text-align: center;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 10% 20%;
 }
 
 button {
     display: inline-block;
 }
 
+.hidden-button {
+    display: none;
+}
+
+.button-clear {
+    background-color: rgba(0, 0, 0, 0.238);
+    border: white solid 2px;
+    height: 2rem;
+    width: auto;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    border: black;
+}
+
+.user-input {
+    background-color: rgba(0, 0, 0, 0.238);
+    border: white solid 2px;
+    color: white;
+
+}
+
+.computer-choice {
+    width: 260px;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.238);
+}
 
 .rock_button {
     width: 10rem;
@@ -21,6 +69,8 @@ button {
     background-position: center;
     border: none;
     background-color: white;
+    border-radius: 5px;
+
 }
 
 .sissor_button {
@@ -31,6 +81,7 @@ button {
     width: 10rem;
     height: 10rem;
     background-color: rgb(255, 255, 255);
+    border-radius: 5px;
     border: none;
     background-color: white;
 }
@@ -44,4 +95,33 @@ button {
     height: 10rem;
     background-color: rgb(255, 255, 255);
     border: none;
+    border-radius: 5px;
+
+}
+
+table {
+    background-color: rgba(0, 0, 0, 0.238);
+    border: white solid 2px;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+@media (min-width: 590px) {
+    .user-input {
+        width: 100%;
+    }
+
+    .computer-choice {
+        width: 50vw;
+    }
+
+    table {
+        font-size: 2rem;
+    }
 }
