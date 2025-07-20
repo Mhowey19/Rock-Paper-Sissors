@@ -1,22 +1,47 @@
 .game-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "rock"
-        "paper"
-        "sissor"
-        "score"
-        ".";
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+button {
+    display: inline-block;
 }
 
 
 .rock_button {
-    background-color: rgb(12, 12, 12);
-
+    width: 10rem;
+    height: 10rem;
+    background-image: url(rock.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    background-color: white;
 }
 
 .sissor_button {
-    grid: 2/1;
-    grid-area: sissor;
-    background-color: silver;
+    background-image: url(sissor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    background-color: white;
+}
+
+.paper_button {
+    background-image: url(paper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
 }
