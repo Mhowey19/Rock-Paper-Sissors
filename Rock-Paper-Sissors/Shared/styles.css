@@ -63,7 +63,7 @@ h1 {
 .rock_button {
     width: 10rem;
     height: 10rem;
-    background-image: url(rock.png);
+    background-image: url(/Rock-Paper-Sissors/Shared/rock.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -74,7 +74,7 @@ h1 {
 }
 
 .sissor_button {
-    background-image: url(sissor.png);
+    background-image: url(/Rock-Paper-Sissors/Shared/sissor.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -87,7 +87,7 @@ h1 {
 }
 
 .paper_button {
-    background-image: url(paper.png);
+    background-image: url(/Rock-Paper-Sissors/Shared/paper.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
